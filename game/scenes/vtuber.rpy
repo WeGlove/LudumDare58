@@ -1,5 +1,5 @@
 label scene_vtuber:
     "We vtubing now boisss"
 
-    $ checked_vtuber = True
+    $ ready_vtuber = False
     jump scene_room

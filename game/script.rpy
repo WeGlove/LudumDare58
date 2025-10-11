@@ -4,10 +4,10 @@
 # name of the character.
 
 define frank = Character("Frank Bankmayer")
-define checked_tcg = False
-define checked_hangover = False
-define checked_vtuber = False
-define checked_uviolatedthelaw = False
+define ready_tcg = True
+define ready_hangover = True
+define ready_vtuber = True
+define ready_uviolatedthelaw = True
 define everything_reminded = False
 
 

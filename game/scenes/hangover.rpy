@@ -1,5 +1,5 @@
 label scene_hangover:
     "We hangoivering now boisss"
 
-    $ checked_hangover = True
+    $ ready_hangover = False
     jump scene_room

@@ -1,5 +1,5 @@
 label scene_uviolatedthelaw:
     "We violating now boisss"
 
-    $ checked_uviolatedthelaw = True
+    $ ready_uviolatedthelaw = False
     jump scene_room
