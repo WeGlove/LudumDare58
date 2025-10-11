@@ -71,7 +71,7 @@ label scene_hangover:
     "Now where were we?"
     "Ah yes, Frank and drugs!"
 
-    hide bg_black
+    hide bg black
 
     show hangover 1
 
@@ -203,12 +203,12 @@ label scene_hangover:
             buddha "Catch, motherfucker!"
             "The statue shatters the tigers skull..."
             "And the USB drive"
-            show hagover gameover_2
+            show hangover gameover 2
             return 
         "Get into hand to hand combat":
             frank "You aren't tougher than my wife"
             frank "Let's dance"
-            show hagover gameover
+            show hangover gameover
             "But Frank was a deathly ill man in his fifties"
             "The End"
             return
@@ -216,7 +216,7 @@ label scene_hangover:
             "The ramen splatters on the tigers head."
             "It is now a lot angrier."
             "It pounces on Frank!"
-            show hagover gameover
+            show hangover gameover
             "The End"
             return
         "Throw the flag at it!":
