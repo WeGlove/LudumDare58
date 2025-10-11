@@ -42,7 +42,7 @@ label scene_room:
         imagebutton:
             xpos 0.1
             ypos 0.6
-            auto "poster_%s.jpg"
+            auto "poster_%s.png"
             action Jump("goto_scene_vtuber")
             tooltip "Frank spend massive amounts of money on vtubers"
             hovered GetTooltip()
@@ -68,13 +68,13 @@ label scene_room:
 # Jump Logic to disable the Screen Buttons on interaction
     label goto_scene_tcg:
         $ sensitive_tcg = False
-        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_vtuber])
         jump scene_tcg
     label goto_scene_hangover:
         $ sensitive_hangover = False
-        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_vtuber])
         jump scene_hangover
     label goto_scene_vtuber:
         $ sensitive_vtuber = False
-        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_vtuber])
         jump scene_vtuber
