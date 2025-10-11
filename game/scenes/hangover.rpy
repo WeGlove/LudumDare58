@@ -221,4 +221,5 @@ label scene_hangover:
             tiger "Have a nice day sir!"
             frank "Thank you!"
 
+    $ ready_hangover = False
     jump scene_room

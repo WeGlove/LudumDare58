@@ -1,5 +1,5 @@
 label scene_tcg:
     "We tcging now boisss"
 
-    $ checked_tcg = True
+    $ ready_tcg = False
     jump scene_room
