@@ -12,7 +12,7 @@ label scene_window:
     "Frank opens the window."
     frank "Was it still not enough, have you not taken enough of me yet!?"
 
-    sho bg black
+    show bg black
 
     "When suddenly..."
     "From afar a choir can be heard."
@@ -48,7 +48,7 @@ label scene_window:
     devil "So... you have finally come, Frank!"
     devil "A greedy man like you, will face eternal torture here."
     
-    show devil_mess
+    show ending 3
 
     frank "These tax filings are a total mess!"
     frank "What were you doing here, building paper air planes?"
@@ -58,6 +58,9 @@ label scene_window:
     frank "This will take weeks to do properly!"
     devil "FRANK! I have decided on a punishment for you!"
     devil "As punishment for your drimes on earth, that window was evil!"
+    
+    show deal
+    
     devil "You shall be tax accountant for eternity"
     devil "with a great salary, and earth privileges."
 
