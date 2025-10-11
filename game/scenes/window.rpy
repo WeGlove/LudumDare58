@@ -12,10 +12,15 @@ label scene_window:
     "Frank opens the window."
     frank "Was it still not enough, have you not taken enough of me yet!?"
 
+    sho bg black
+
     "When suddenly..."
     "From afar a choir can be heard."
     "Frank whirls around to find the back of his room parted"
-    "A Crach has formed revealing golden light shining into the room."
+
+    show ending 2
+
+    "A Crack has formed revealing golden light shining into the room."
     "A suited woman descends from the golden light."
     "Be not afraid Frank, I am your tax accountant."
 
