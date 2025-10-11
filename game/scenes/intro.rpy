@@ -39,7 +39,7 @@ label scene_intro:
     show intro comic 8
     "Using the power of his credit card, granted by the massive wealth amassed by creative accounting and clever tax fraud!"
     show intro comic 9
-    "He will collect all the debt he can in what little if his life he has left."
+    "He will collect all the debt he can in what little of his life he has left."
     scene bg black
     show intro comic 10
     "Your star is {b}Frank Bankmayer{/b}"
