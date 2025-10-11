@@ -1,20 +1,21 @@
 init:
     transform tcg_transform:
-        xzoom 0.8
-        yzoom 1.8
+        xzoom 0.2
+        yzoom 0.2
     transform hangover_transform:
-        xzoom 0.8
-        yzoom 1.8
+        xzoom 0.45
+        yzoom 0.45
     transform vtuber_transform:
-        xzoom 0.8
-        yzoom 1.8
+        xzoom 0.2
+        yzoom 0.2
     transform uviolatedthelaw_transform:
-        xzoom 0.8
-        yzoom 1.8
+        xzoom 0.2
+        yzoom 0.2
     transform window_transform:
-        xzoom 0.8
-        yzoom 1.8
+        xzoom 0.4
+        yzoom 0.4
 label scene_room:
+    scene frank room background
     # Check if window should be opened
     $ everything_reminded = not any([ready_hangover, ready_tcg, ready_uviolatedthelaw, ready_vtuber])
     default sensitive_tcg = True
@@ -34,9 +35,9 @@ label scene_room:
             sensitive sensitive_tcg
             at tcg_transform
         imagebutton:
-            xpos 0.6
-            ypos 0.6
-            auto "placeholder_%s.jpg"
+            xpos 0.4
+            ypos 0.65
+            auto "tiger_%s.png"
             action Jump("goto_scene_hangover")
             tooltip "How did this get here?"
             hovered GetTooltip()
@@ -61,9 +62,9 @@ label scene_room:
             sensitive sensitive_uviolatedthelaw
             at uviolatedthelaw_transform
         imagebutton:
-            xpos 0.3
-            ypos 0.3
-            auto "placeholder_%s.jpg"
+            xpos 0.6
+            ypos 0.2
+            auto "window_%s.png"
             action Jump("scene_window")
             tooltip "There is only one thing left to do..."
             hovered GetTooltip()
