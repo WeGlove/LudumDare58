@@ -1,7 +1,7 @@
 label scene_vtuber:
 
     define vtuber = Character("VTuber")
-    definer chatter = Character("Some random chatter")
+    define chatter = Character("Some random chatter")
     $ v_love = True
     $ v_million = True
     $ v_feet = True
@@ -26,7 +26,7 @@ label scene_vtuber:
     menu:
         "I love you" if v_love:
             vtuber "Aww how cute, thank you!"
-            v_love = False
+            $ v_love = False
             $ attention_points += 1
         "Donate 1000000 dollars" if v_million and attention_points > 2 and not v_dollar_a:
             show v tuber confused
@@ -34,7 +34,7 @@ label scene_vtuber:
             vtuber "A {b}MILLION{/b} dollars!?"
             vtuber "Can you aford that"
             frank "My wife doesn't mind..."
-            v_million = False
+            $ v_million = False
             jump VTuber_Out
         "Show feet pls" if v_feet:
             show v tuber mad
@@ -52,23 +52,25 @@ label scene_vtuber:
             frank "An unspecified one"
             vtuber "That's the most lethal kind!"
             vtuber "I hope you are doing better soon"
-            v_die = False
+            $ v_die = False
             $ attention_points += 1
-        "Donate a dollar":
+        "Donate a dollar" if v_dollar_a:
             "She completeley ignores the donation, because a rock in the game she is playing looks a little like a funny face."
-            $ v_dollar_a = True
-        "What is your favorite food":
+            $ v_dollar_a = False
+        "What is your favorite food" if v_food:
             vtuber "Chat somebody is asking what my favorite food is"
             vtuber "Is it bad that it is just plain rice crackers?"
             chatter "That's not Gouda!"
-            chatter "Completely parmeseand, totally Pestoed out!"
+            chatter "completely lost lol"
             $ v_food = False
-        "What is your blood type":
+        "What is your blood type" if v_blood:
             vtuber "My favorite blood type"
             vtuber "Dairy"
             "The chat goes wild after that"
             frank "I really don't get the youth sometimes."
             $ v_blood = False
+        "I am Completely parmeseaned, totally Pestoed out!":
+            chatter "Cringe"
 
     jump ChatLoop
 
