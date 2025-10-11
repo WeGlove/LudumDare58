@@ -12,7 +12,7 @@ label scene_window:
     "Frank opens the window."
     frank "Was it still not enough, have you not taken enough of me yet!?"
 
-    sho bg black
+    show bg black
 
     "When suddenly..."
     "From afar a choir can be heard."
