@@ -12,7 +12,7 @@ label scene_window:
     "Frank opens the window."
     frank "Was it still not enough, have you not taken enough of me yet!?"
 
-    sho bg black
+    sho wbg black
 
     "When suddenly..."
     "From afar a choir can be heard."
@@ -43,7 +43,7 @@ label scene_window:
     angel "Frank, I am afraid you cannot be allowed join me."
     angel "You will have to go face your biggest enemy in hell"
 
-    scence bg black
+    scene bg black
 
     devil "So... you have finally come, Frank!"
     devil "A greedy man like you, will face eternal torture here."
