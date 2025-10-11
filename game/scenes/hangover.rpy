@@ -204,6 +204,7 @@ label scene_hangover:
             "The statue shatters the tigers skull..."
             "And the USB drive"
             show hangover gameover 2
+            "The End"
             return 
         "Get into hand to hand combat":
             frank "You aren't tougher than my wife"
