@@ -8,19 +8,15 @@ init:
     transform vtuber_transform:
         xzoom 0.2
         yzoom 0.2
-    transform uviolatedthelaw_transform:
-        xzoom 0.2
-        yzoom 0.2
     transform window_transform:
         xzoom 0.4
         yzoom 0.4
 label scene_room:
     scene frank room background
     # Check if window should be opened
-    $ everything_reminded = not any([ready_hangover, ready_tcg, ready_uviolatedthelaw, ready_vtuber])
+    $ everything_reminded = not any([ready_hangover, ready_tcg, ready_vtuber])
     default sensitive_tcg = True
     default sensitive_hangover = True
-    default sensitive_uviolatedthelaw = True
     default sensitive_vtuber = True
     default sensitive_window = False
     screen screen_room():
@@ -46,21 +42,12 @@ label scene_room:
         imagebutton:
             xpos 0.1
             ypos 0.6
-            auto "placeholder_%s.jpg"
+            auto "poster_%s.jpg"
             action Jump("goto_scene_vtuber")
             tooltip "Frank spend massive amounts of money on vtubers"
             hovered GetTooltip()
             sensitive sensitive_vtuber
             at vtuber_transform
-        imagebutton:
-            xpos 0.6
-            ypos 0.1
-            auto "placeholder_%s.jpg"
-            action Jump("goto_scene_uviolatedthelaw")
-            tooltip "Violating the Law felt like a good idea"
-            hovered GetTooltip()
-            sensitive sensitive_uviolatedthelaw
-            at uviolatedthelaw_transform
         imagebutton:
             xpos 0.6
             ypos 0.2
@@ -91,7 +78,3 @@ label scene_room:
         $ sensitive_vtuber = False
         $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
         jump scene_vtuber
-    label goto_scene_uviolatedthelaw:
-        $ sensitive_uviolatedthelaw = False
-        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
-        jump scene_uviolatedthelaw
