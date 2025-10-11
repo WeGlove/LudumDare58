@@ -1,6 +1,19 @@
 init:
-    transform customzoom:
-        zoom 0.8
+    transform tcg_transform:
+        xzoom 0.8
+        yzoom 1.8
+    transform hangover_transform:
+        xzoom 0.8
+        yzoom 1.8
+    transform vtuber_transform:
+        xzoom 0.8
+        yzoom 1.8
+    transform uviolatedthelaw_transform:
+        xzoom 0.8
+        yzoom 1.8
+    transform window_transform:
+        xzoom 0.8
+        yzoom 1.8
 label scene_room:
     # Check if window should be opened
     $ everything_reminded = not any([ready_hangover, ready_tcg, ready_uviolatedthelaw, ready_vtuber])
@@ -8,6 +21,7 @@ label scene_room:
     default sensitive_hangover = True
     default sensitive_uviolatedthelaw = True
     default sensitive_vtuber = True
+    default sensitive_window = False
     screen screen_room():
         imagebutton:
             id "tcg"
@@ -18,7 +32,7 @@ label scene_room:
             tooltip "Frank embarked on a trading card adventure"
             hovered GetTooltip()
             sensitive sensitive_tcg
-            at customzoom
+            at tcg_transform
         imagebutton:
             xpos 0.6
             ypos 0.6
@@ -27,7 +41,7 @@ label scene_room:
             tooltip "How did this get here?"
             hovered GetTooltip()
             sensitive sensitive_hangover
-            at customzoom
+            at hangover_transform
         imagebutton:
             xpos 0.1
             ypos 0.6
@@ -36,7 +50,7 @@ label scene_room:
             tooltip "Frank spend massive amounts of money on vtubers"
             hovered GetTooltip()
             sensitive sensitive_vtuber
-            at customzoom
+            at vtuber_transform
         imagebutton:
             xpos 0.6
             ypos 0.1
@@ -45,15 +59,16 @@ label scene_room:
             tooltip "Violating the Law felt like a good idea"
             hovered GetTooltip()
             sensitive sensitive_uviolatedthelaw
-            at customzoom
-        if everything_reminded:
-            imagebutton:
-                xpos 0.3
-                ypos 0.3
-                auto "placeholder_%s.jpg"
-                action Jump("scene_window")
-                tooltip "There is only one thing left to do..."
-                hovered GetTooltip()
+            at uviolatedthelaw_transform
+        imagebutton:
+            xpos 0.3
+            ypos 0.3
+            auto "placeholder_%s.jpg"
+            action Jump("scene_window")
+            tooltip "There is only one thing left to do..."
+            hovered GetTooltip()
+            sensitive sensitive_window
+            at window_transform
 
 # Tooltipping Logic for the hover events
         $ tooltip = GetTooltip()
@@ -65,13 +80,17 @@ label scene_room:
 # Jump Logic to disable the Screen Buttons on interaction
     label goto_scene_tcg:
         $ sensitive_tcg = False
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
         jump scene_tcg
     label goto_scene_hangover:
         $ sensitive_hangover = False
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
         jump scene_hangover
     label goto_scene_vtuber:
         $ sensitive_vtuber = False
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
         jump scene_vtuber
     label goto_scene_uviolatedthelaw:
         $ sensitive_uviolatedthelaw = False
+        $ sensitive_window = not any([sensitive_hangover, sensitive_tcg, sensitive_uviolatedthelaw, sensitive_vtuber])
         jump scene_uviolatedthelaw
