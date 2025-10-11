@@ -108,9 +108,17 @@ label scene_hangover:
                 menu:
                     "Try extending a hand":
                         "Frank tried to extend a hand but is not fast enough. The car falls out of the building"
+                        show hangover 5
+                        ""
+                        show hangover 6
+                        ""
                         buddha "The universe wanted this. Death is part of life, never save anyone"
                     "Don't":
                         "The car falls out of the building"
+                        show hangover 5
+                        ""
+                        show hangover 6
+                        ""
                         buddha "You were correct to do this, he will be reincarnated into a better life"
                 frank "What?"
                 buddha "..."
@@ -195,12 +203,12 @@ label scene_hangover:
             buddha "Catch, motherfucker!"
             "The statue shatters the tigers skull..."
             "And the USB drive"
-            # show end
+            show hagover gameover_2
             return 
         "Get into hand to hand combat":
             frank "You aren't tougher than my wife"
             frank "Let's dance"
-            # show end
+            show hagover gameover
             "But Frank was a deathly ill man in his fifties"
             "The End"
             return
@@ -208,7 +216,9 @@ label scene_hangover:
             "The ramen splatters on the tigers head."
             "It is now a lot angrier."
             "It pounces on Frank!"
-            # show end
+            show hagover gameover
+            "The End"
+            return
         "Throw the flag at it!":
             "The tiger salutes the flag."
             "Frank sucessfully snatches his data from the tigers collar"
