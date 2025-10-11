@@ -24,7 +24,7 @@ label scene_room:
             id "tcg"
             xpos 0.1
             ypos 0.1
-            auto "placeholder_%s.jpg"
+            auto "card_%s.png"
             action Jump("goto_scene_tcg")
             tooltip "Frank embarked on a trading card adventure"
             hovered GetTooltip()
