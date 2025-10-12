@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Thank you for playing Debt Collector. Please consider also playing some of our previous games at: weglove.itch.io
 """)
 
 
@@ -37,7 +38,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "LudumDare58"
+define build.name = "DebtCollector"
 
 
 ## Sounds and music ############################################################

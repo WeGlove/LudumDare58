@@ -5,6 +5,10 @@ define devil = Character("Lucifer")
 label scene_window:
     "And so frank looks out the window."
     "He asks himself:"
+    
+    show bg black
+    show ending 1 at top
+
     frank "And what about all the money I wasted."
     frank "Is there even a single thing I haven't tried"
     frank "Love, Luxury, Trading Cards, anything a man could ask for and yet..."
@@ -16,6 +20,9 @@ label scene_window:
     "When suddenly..."
     "From afar a choir can be heard."
     "Frank whirls around to find the back of his room parted"
+
+    hide ending 1
+    hide bg black
 
     show ending 2 at top
 

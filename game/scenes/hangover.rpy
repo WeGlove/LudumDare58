@@ -44,7 +44,7 @@ label scene_hangover:
         "Yes":
             "Very good!"
         "No":
-            "To bad!"
+            "Too bad!"
 
     "Do you feel lonely in your life?"
     "Did you not achieve what your second cousin's girlfriend expected of you?"

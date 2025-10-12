@@ -13,6 +13,9 @@ label scene_vtuber:
 
     $ attention_points = 0
 
+    scene bg black
+    show computer frank at top
+
     frank "What else could I be spending my money on"
     frank "Oh I know, I could donate to the computer television woman!"
     frank "I have to get her attention!"
