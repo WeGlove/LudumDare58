@@ -22,7 +22,7 @@ label scene_hangover:
 
     "Yes I know I was thinking..."
 
-    show hangover 1
+    show hangover 1 at top
 
     frank "Oh god, I feel like I am about to live"
 
@@ -34,7 +34,7 @@ label scene_hangover:
     frank "I would literally go to hell for that"
     frank "I still don't have a backup!"
 
-    hide hangover 1
+    hide hangover 1 at top
     show bg black
 
     "The developers of the game would like to deliver a message to you."
@@ -52,7 +52,7 @@ label scene_hangover:
 
     "Then we have the cure for you!"
 
-    show ad_break
+    show ad_break at top
 
     "Create a much better life for yourself by helping Frank Bankmayer get his Kundendaten USB Stick in the previous game"
     "wow"
@@ -65,7 +65,7 @@ label scene_hangover:
 
     hide ad_break
 
-    show bg black
+    show bg black at top
 
     "Thank you for listening to our message!"
     "Now where were we?"
@@ -73,9 +73,11 @@ label scene_hangover:
 
     hide bg black
 
-    show hangover 1
+    show bg black 
+    show hangover 1 at top
 
     label hang_menu:
+    
     frank "Now where do I look?"
     menu:
         "The Car" if not hangover_car:
@@ -92,10 +94,12 @@ label scene_hangover:
                 frank "Can I help you?"
                 "The man jolts into a working posture"
                 "The car rocks concerningly"
+                show ramen at top
                 deliverer "Here is your food sir! One Ramen Special (Limited Edition)! Thank you for ordering at Refi's Ramen Restaurant"
                 "He hold out a box with food."
                 "It seems cold"
                 frank "Uh, yeah thanks"
+                hide ramen
                 if hangover_frank_state == 0:
                     deliverer "Your eyes seem to be red sir, are you alright?"
                 elif hangover_frank_state == 1:
@@ -108,16 +112,16 @@ label scene_hangover:
                 menu:
                     "Try extending a hand":
                         "Frank tried to extend a hand but is not fast enough. The car falls out of the building"
-                        show hangover 5
+                        show hangover 5 at top
                         ""
-                        show hangover 6
+                        show hangover 6 at top
                         ""
                         buddha "The universe wanted this. Death is part of life, never save anyone"
                     "Don't":
                         "The car falls out of the building"
-                        show hangover 5
+                        show hangover 5 at top
                         ""
-                        show hangover 6
+                        show hangover 6 at top
                         ""
                         buddha "You were correct to do this, he will be reincarnated into a better life"
                 frank "What?"
@@ -138,9 +142,9 @@ label scene_hangover:
             menu:
                 "Cover Tattoo with flour that is lying around for some reason":
                     frank "Crap that wasn't flour"
-                    show hangover 4
+                    show hangover 4 at top
                     frank "..."
-                    show  hangover 1
+                    show hangover 1 at top
                     frank "woah"
                     $ hangover_frank_state = 0
                 "Try to comb the Mowahwk using beer":
@@ -184,16 +188,18 @@ label scene_hangover:
                 "A statue of Buddha"
                 "You kind of feel bad now"
         "The Mona Lisa" if not hangover_art:
+            show moustache lisa at top
             frank "A priceless art piece, at least my good taste did not leave while getting drunk!"
             frank "Is that a mustache?"
+            hide moustache lisa
             $ hangover_art = True
     jump hang_menu
 
     label hang_tiger:
-    show hangover 2
+    show hangover 2 at top
     "Instead of water a tiger apces around the luxiouriouus hotel pool"
     frank "Wait, ist that!?"
-    show hangover 3
+    show hangover 3 at top
 
     frank "The USB stick!"
 
@@ -203,13 +209,13 @@ label scene_hangover:
             buddha "Catch, motherfucker!"
             "The statue shatters the tigers skull..."
             "And the USB drive"
-            show hangover gameover 2
+            show hangover gameover 2 at top
             "The End"
             return 
         "Get into hand to hand combat":
             frank "You aren't tougher than my wife"
             frank "Let's dance"
-            show hangover gameover
+            show hangover gameover at top
             "But Frank was a deathly ill man in his fifties"
             "The End"
             return
@@ -217,7 +223,7 @@ label scene_hangover:
             "The ramen splatters on the tigers head."
             "It is now a lot angrier."
             "It pounces on Frank!"
-            show hangover gameover
+            show hangover gameover at top
             "The End"
             return
         "Throw the flag at it!":
