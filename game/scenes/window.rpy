@@ -29,7 +29,7 @@ label scene_window:
 
     frank "Bring it"
 
-    angel "It seems you have bought luxury goods and dealt in tradiong card games"
+    angel "It seems you have bought luxury goods and dealt in trading card games"
     angel "You also killed tigers and lost your customer data for a while"
     angel "But all is forgiven"
 
@@ -52,14 +52,14 @@ label scene_window:
     frank "These tax filings are a total mess!"
     frank "What were you doing here, building paper air planes?"
     devil "Uh..."
-    frank "And are these digihell figures on your drawers"
+    frank "And are these Digihell figures on your drawers"
     devil "these aren't ..."
     frank "This will take weeks to do properly!"
 
     show deal face off at top
 
     devil "FRANK! I have decided on a punishment for you!"
-    devil "As punishment for your drimes on earth, that window was evil!"
+    devil "As punishment for your crimes on earth, that window was evil!"
     
     show deal at top
     

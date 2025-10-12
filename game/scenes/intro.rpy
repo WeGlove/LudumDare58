@@ -24,13 +24,13 @@ label scene_intro:
     show intro comic 2 at top
     "A man is receiving terrible news!"
     show intro comic 3 at top
-    "Dr. Frank Bankmayer, successfull tax accountant, privately insured, is shocked!"
+    "Dr. Frank Bankmayer, successful tax accountant, privately insured, is shocked!"
     nurse "Here is the doctors letter."
     nurse "I am very sorry Dr. Bankmayer..."
     show intro comic 4 at top
     "He only has 10 days left to live!"
     show intro comic 5 at top
-    "Downtroden, full of grief and regret, Frank leaves the hospital."
+    "Downtrodden, full of grief and regret, Frank leaves the hospital."
     show intro comic 6 at top
     "Brooding over what to do with the rest of his {s}short{/s} shorter life."
     "Suddenly..."

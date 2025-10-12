@@ -1,5 +1,5 @@
 define deliverer = Character("Delivery Driver")
-define buddha = Character("Budhha")
+define buddha = Character("Buddha")
 define tiger = Character("Tiger")
 
 
@@ -46,9 +46,9 @@ label scene_hangover:
         "No":
             "To bad!"
 
-    "Do you feel lonley in your life?"
+    "Do you feel lonely in your life?"
     "Did you not achieve what your second cousin's girlfriend expected of you?"
-    "Did you accidetally put on {b}2{/b} pairs of underpants this morning?"
+    "Did you accidentally put on {b}2{/b} pairs of underpants this morning?"
 
     "Then we have the cure for you!"
 
@@ -95,7 +95,7 @@ label scene_hangover:
                 "The man jolts into a working posture"
                 "The car rocks concerningly"
                 show ramen at top
-                deliverer "Here is your food sir! One Ramen Special (Limited Edition)! Thank you for ordering at Refi's Ramen Restaurant"
+                deliverer "Here is your food sir! One Ramen Special (Limited Edition)!"
                 "He hold out a box with food."
                 "It seems cold"
                 frank "Uh, yeah thanks"
@@ -133,8 +133,8 @@ label scene_hangover:
                 $ hangover_car = True
 
         "Yourself" if not hangover_frank:
-            "Frank finds himself to have bought a limited edition Gucci bathrob lined in black lined with real gold threads"
-            "He is currently rocking a Mohawk and has a dollar sign tatooed on his face."
+            "Frank finds himself to have bought a limited edition Gucci bathrobe lined in black lined with real gold threads"
+            "He is currently rocking a Mohawk and has a dollar sign tattooed on his face."
             frank "Well this could have gone worse."
             frank "Best to clean myself up a bit"
             frank "What should I do?"
@@ -147,13 +147,13 @@ label scene_hangover:
                     show hangover 1 at top
                     frank "woah"
                     $ hangover_frank_state = 0
-                "Try to comb the Mowahwk using beer":
+                "Try to comb the Mohawk using beer":
                     frank "Well it didn't do much for the color..."
                     frank "but this is at least..."
                     frank "wait"
                     frank "How did I get hair in the first place, I am bald!?"
                     $ hangover_frank_state = 1
-                "Wear the barthrobe on the inside to conceal wealth":
+                "Wear the bathrobe on the inside to conceal wealth":
                     frank "Doesn't look as good, but I guess"
                     $ hangover_frank_state = 2
 
@@ -162,11 +162,11 @@ label scene_hangover:
             frank "I remember there was a really good bottle of something some here"
             frank "But..."
             "No, I am not making another one of these dumb interactions."
-            "Here you go Frank, gift from above, an expensive bottle of blueberry licour, your favorite."
-            frank "Thank you, glad I reandomly found this."
+            "Here you go Frank, gift from above, an expensive bottle of blueberry liquor, your favorite."
+            frank "Thank you, glad I randomly found this."
             $ hangover_alc = True
         "Broken Window":
-            "You can here shuffeling outside, but the window is locked."
+            "You can here shuffling outside, but the window is locked."
             if hangover_buddha:
                 "The window unlocks using the key."
                 "Frank looks outside"
@@ -183,7 +183,7 @@ label scene_hangover:
                 "You put the key under the statue because you really didn't want to open the window for some reason"
                 $ hangover_buddha  = True
             elif hangover_car:
-                frank "I seem to remember something about this statue, if only I had sometihg to remind me of yesterday."
+                frank "I seem to remember something about this statue, if only I had something to remind me of yesterday."
             else:
                 "A statue of Buddha"
                 "You kind of feel bad now"
@@ -197,7 +197,7 @@ label scene_hangover:
 
     label hang_tiger:
     show hangover 2 at top
-    "Instead of water a tiger apces around the luxiouriouus hotel pool"
+    "Instead of water a tiger paces around the luxurious hotel pool"
     frank "Wait, ist that!?"
     show hangover 3 at top
 
@@ -228,13 +228,13 @@ label scene_hangover:
             return
         "Throw the flag at it!":
             "The tiger salutes the flag."
-            "Frank sucessfully snatches his data from the tigers collar"
+            "Frank successfully snatches his data from the tigers collar"
         "Show it the Mona Lisa":
             tiger "Truly a great work of art."
             tiger "While I was upset about being stolen from my enclosure at the zoo last night,"
             tiger "I have now come to understand that anger will not help resolve my situation."
             tiger "I noticed you talking about my USB drive"
-            tiger "I don't know why you straped it to my collar in the first place, but you can have it back"
+            tiger "I don't know why you strapped it to my collar in the first place, but you can have it back"
             tiger "Have a nice day sir!"
             frank "Thank you!"
 

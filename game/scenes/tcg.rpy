@@ -92,7 +92,7 @@ label scene_tcg_choice:
             else:
                 frank "Wait.... Why am I even doing this? Why do you have Uno Booster Boxes?"
                 clerk "They are really popular. They released a new color recently."
-                frank "But... That does not ewven change the game! It is still Uno!"
+                frank "But... That does not even change the game! It is still Uno!"
                 clerk "Yeah. They really did a good job with balancing the new cards."
                 frank "Thats BECAUSE it it still just Uno!"
                 "Frank is infuriated, but his thirst has not been quenched."   
@@ -118,7 +118,7 @@ label scene_tcg_digihell:
     pause
     show tgc pack opening 2 at top
     pause
-    frank "Well that was a dissapointment..."
+    frank "Well that was a disappointment..."
     teen_1 "OH MY GOD YOU PULLED THE FIREANT-CHAN SPECIAL ILLUSTRATION RARE AS A STARLIGHT RARE?!"
     teen_3 "Wait I need that! Please! I'll give you my whole Aurafarmers collection. Even the sealed boosters from 15 years ago."
     teen_2 "Totally BANK! Pesto'ed pull. Completely parmesan'd. Old man has all the cheese! Old man Aura!"
@@ -160,7 +160,7 @@ label scene_tcg_survive:
             show tgc card bend 2 at top
             teen_1 "NOOOOOOOOOOOOOOOOOOOOO!!!!!!"
             teen_2 "WHY WOULD YOU DO THAT?! ITS THE BEST CARD IN THE SET!"
-            teen_3 "These feelings of emptyness... Like a Cheese full of holes.... I hate you old man."
+            teen_3 "These feelings of emptiness... Like a Cheese full of holes.... I hate you old man."
             "Content with how thinks turned out, Frank goes back home, knowing full well, that these new Trading Card Games are bad anyways."
             frank "In my days, you could just buy a deck of cards and have fun with it."
             jump scene_tcg_end
@@ -180,14 +180,14 @@ label scene_tcg_survive:
             teen_1 "You need to get with the times old man!"
             teen_2 "Playing the OG RGBY layup. Did you really think that stuff holds up in the modern meta?"
             frank "What do you mean modern meta? This is UNO!"
-            teen_3 "Anyways. I'm gonna hit you with a purple Draw Fourty-Six. Since a Purple 6 is on the stack right now, you are also unable to play for the next 6 turns."
+            teen_3 "Anyways. I'm gonna hit you with a purple Draw Forty-Six. Since a Purple 6 is on the stack right now, you are also unable to play for the next 6 turns."
             "Frank finds himself in a bit of a UNO pickle..."
             # epic stunlock
             show tgc gameover 2 at top
             pause
             return
         "Trade your way out":
-            "Frank tried his best to trasde his way out of his dilemma."
+            "Frank tried his best to trade his way out of his dilemma."
             "He ends up selling all the stuff he trades to the store, just to buy more Digihell Live Boosters just for the heck of it."
             "Eventually he opens up yet another FireAnt-Chan Special Illustration Rare and is surrounded by even more teenagers now."
             jump scene_tcg_survive
