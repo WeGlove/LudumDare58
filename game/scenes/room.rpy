@@ -26,7 +26,7 @@ label scene_room:
             ypos 0.3
             auto "card_%s.png"
             action Jump("goto_scene_tcg")
-            tooltip "Frank embarked on a trading card adventure"
+            tooltip "{color=#000000ff}Frank embarked on a trading card adventure{/color}"
             hovered GetTooltip()
             sensitive sensitive_tcg
             at tcg_transform
@@ -35,7 +35,7 @@ label scene_room:
             ypos 0.65
             auto "tiger_%s.png"
             action Jump("goto_scene_hangover")
-            tooltip "How did this get here?"
+            tooltip "{color=#000000ff}How did this get here?{/color}"
             hovered GetTooltip()
             sensitive sensitive_hangover
             at hangover_transform
@@ -44,7 +44,7 @@ label scene_room:
             ypos 0.3
             auto "poster_%s.png"
             action Jump("goto_scene_vtuber")
-            tooltip "Frank spend massive amounts of money on vtubers"
+            tooltip "{color=#000000ff}Frank spend massive amounts of money on vtubers{/color}"
             hovered GetTooltip()
             sensitive sensitive_vtuber
             at vtuber_transform
@@ -53,7 +53,7 @@ label scene_room:
             ypos 0.2
             auto "window_%s.png"
             action Jump("scene_window")
-            tooltip "There is only one thing left to do..."
+            tooltip "{color=#000000ff}There is only one thing left to do...{/color}"
             hovered GetTooltip()
             sensitive sensitive_window
             at window_transform
