@@ -22,8 +22,8 @@ label scene_room:
     screen screen_room():
         imagebutton:
             id "tcg"
-            xpos 0.1
-            ypos 0.1
+            xpos 0.2
+            ypos 0.3
             auto "card_%s.png"
             action Jump("goto_scene_tcg")
             tooltip "Frank embarked on a trading card adventure"
@@ -40,8 +40,8 @@ label scene_room:
             sensitive sensitive_hangover
             at hangover_transform
         imagebutton:
-            xpos 0.1
-            ypos 0.6
+            xpos 0.45
+            ypos 0.3
             auto "poster_%s.png"
             action Jump("goto_scene_vtuber")
             tooltip "Frank spend massive amounts of money on vtubers"
