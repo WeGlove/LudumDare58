@@ -1,4 +1,3 @@
-
 define angel = Character("Angel")
 define devil = Character("Lucifer")
 
@@ -18,7 +17,7 @@ label scene_window:
     "From afar a choir can be heard."
     "Frank whirls around to find the back of his room parted"
 
-    show ending 2
+    show ending 2 at top
 
     "A Crack has formed revealing golden light shining into the room."
     "A suited woman descends from the golden light."
@@ -38,7 +37,7 @@ label scene_window:
 
     angel "wait"
     angel "what the fuck is that!?"
-    angel "Are you currently heating {}AND{/b} keeping the windows open!?"
+    angel "Are you currently heating {b}AND{/b} keeping the windows open!?"
 
     angel "Frank, I am afraid you cannot be allowed join me."
     angel "You will have to go face your biggest enemy in hell"
@@ -48,7 +47,7 @@ label scene_window:
     devil "So... you have finally come, Frank!"
     devil "A greedy man like you, will face eternal torture here."
     
-    show ending 3
+    show ending 3 at top
 
     frank "These tax filings are a total mess!"
     frank "What were you doing here, building paper air planes?"
@@ -56,11 +55,18 @@ label scene_window:
     frank "And are these digihell figures on your drawers"
     devil "these aren't ..."
     frank "This will take weeks to do properly!"
+
+    show deal face off at top
+
     devil "FRANK! I have decided on a punishment for you!"
     devil "As punishment for your drimes on earth, that window was evil!"
     
-    show deal
+    show deal at top
     
-    devil "You shall be tax accountant for eternity"
+    devil "You shall be my tax accountant for eternity"
     devil "with a great salary, and earth privileges."
+
+    scene bg black
+
+    "The End."
 
