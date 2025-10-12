@@ -5,9 +5,9 @@ label scene_tcg:
     "Ahh that thing..."
 
     "I still do not know what exactly is the worth of that."
-    show tgc 1
+    show tgc 1 at top
     "I should have just sticked to Battle Lawyers Evolution. It's the best TCG anyways."
-    show tgc 2
+    show tgc 2 at top
 
     define clerk = Character("Clerk")
     define teen_1 = Character("Timothy")
@@ -49,12 +49,12 @@ label scene_tcg_choice:
                 "Frank is infuriated, but his thirst has not been quenched."   
                 jump scene_tcg_choice
             elif randfloat < 0.75:
-                show tgc business card
+                show tgc business card at top
                 clerk "A limited edition Marriage Councellor of the Abyss card."
                 frank "HEY! That's just the guys business card! What the hell!"
                 "Frank is infuriated, but his thirst has not been quenched."   
                 hide tgc business card
-                show tgc 2
+                show tgc 2 at top
                 jump scene_tcg_choice
             else:
                 clerk "Oh Sorry! We don't have any left... I can offer you some Digihell Boosters for the same prize though."
@@ -67,7 +67,7 @@ label scene_tcg_choice:
             clerk "Sorry we have only one left."
             frank "That's fine."
             "Frank rips up the pack."
-            show tgc mr cheezt
+            show tgc mr cheezt at top
             frank "WOAH That looks like a great card! Mr.Cheezt Full ART! And a signature?!"
             clerk "Ugh... Go figure... It's yet another fake pack... Lots of scalpers nowadays, selling fake packs even to stores."
             frank "But I bought it off of you. Aren't you a store? How the hell do you get fake packs?"
@@ -75,10 +75,10 @@ label scene_tcg_choice:
             frank "What a scam..."
             clerk "Yeah, it is quite sad. Here let me make it up to you with a box of Digihell Live Boosters."
             hide tgc mr cheezt
-            show tgc 2
+            show tgc 2 at top
             jump scene_tcg_digihell
         "Uno":
-            show tgc uno opening
+            show tgc uno opening at top
             "Frank opens up Uno Boosters"
             hide tgc uno opening
             $ randfloat = renpy.random.random()
@@ -114,9 +114,9 @@ label scene_tcg_digihell:
     clerk "Sir... Other customers want to buy cards as well. Could you please hurry up?"
 
     # show karten hier
-    show tgc pack opening
+    show tgc pack opening at top
     pause
-    show tgc pack opening 2
+    show tgc pack opening 2 at top
     pause
     frank "Well that was a dissapointment..."
     teen_1 "OH MY GOD YOU PULLED THE FIREANT-CHAN SPECIAL ILLUSTRATION RARE AS A STARLIGHT RARE?!"
@@ -129,7 +129,7 @@ label scene_tcg_digihell:
     "Frank is quickly surrounded by the teenagers. He needs to go find a way to get out of the shop. This is becoming ridiculous!"
     hide tgc pack opening 2
     hide tgc pack opening
-    show tgc 2
+    show tgc 2 at top
     jump scene_tcg_survive
 
 label scene_tcg_survive:
@@ -146,7 +146,7 @@ label scene_tcg_survive:
             tim "That is exactly how it works."
             frank "It really is not. I have a doctorate in taxes..."
             tim "No. You can't do this because of your oath. The end. Epic."
-            show tgc hypokratischer eid
+            show tgc hypokratischer eid at top
             pause
             return
         "Bend the Card":
@@ -154,10 +154,10 @@ label scene_tcg_survive:
             frank "ENOUGH IS ENOUGH!"
             frank "This is just cardboard!"
             "Frank takes the card...."
-            show tgc card bend 1
+            show tgc card bend 1 at top
             # show epic
             "And bends it in front of the teenagers!"
-            show tgc card bend 2
+            show tgc card bend 2 at top
             teen_1 "NOOOOOOOOOOOOOOOOOOOOO!!!!!!"
             teen_2 "WHY WOULD YOU DO THAT?! ITS THE BEST CARD IN THE SET!"
             teen_3 "These feelings of emptyness... Like a Cheese full of holes.... I hate you old man."
@@ -183,7 +183,7 @@ label scene_tcg_survive:
             teen_3 "Anyways. I'm gonna hit you with a purple Draw Fourty-Six. Since a Purple 6 is on the stack right now, you are also unable to play for the next 6 turns."
             "Frank finds himself in a bit of a UNO pickle..."
             # epic stunlock
-            show tgc gameover 2
+            show tgc gameover 2 at top
             pause
             return
         "Trade your way out":
